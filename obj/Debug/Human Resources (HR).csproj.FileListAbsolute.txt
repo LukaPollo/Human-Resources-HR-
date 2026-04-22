@@ -1,0 +1,7 @@
+H:\Visual studio 2022\Human Resources (HR)\bin\Debug\Human Resources (HR).exe.config
+H:\Visual studio 2022\Human Resources (HR)\bin\Debug\Human Resources (HR).exe
+H:\Visual studio 2022\Human Resources (HR)\bin\Debug\Human Resources (HR).pdb
+H:\Visual studio 2022\Human Resources (HR)\obj\Debug\Human Resources (HR).csproj.AssemblyReference.cache
+H:\Visual studio 2022\Human Resources (HR)\obj\Debug\Human Resources (HR).csproj.CoreCompileInputs.cache
+H:\Visual studio 2022\Human Resources (HR)\obj\Debug\Human Resources (HR).exe
+H:\Visual studio 2022\Human Resources (HR)\obj\Debug\Human Resources (HR).pdb
