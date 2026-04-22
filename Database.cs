@@ -20,7 +20,7 @@ namespace Human_Resources__HR_
         ///hisytory(people id, begin, end)
         //
 
-        public static void Database1()
+        public static void Database1(string connection)
         {
             List<Employee> list = CsvHelper.ReadEmployees("employees.csv");
             using (MySqlConnection conn = new MySqlConnection())
@@ -35,6 +35,7 @@ namespace Human_Resources__HR_
                 string insertQuery = "INSERT INTO People (FirstName, LastName) VALUES (@FirstName, @LastName);";
                 using (MySqlCommand cmd2 = new MySqlCommand(insertQuery, conn))
                 {
+                    cmd2.Parameters.Clear();
                     cmd2.Parameters.Add("@FirstName", MySqlDbType.VarChar, 255).Value = list[0];
                     cmd2.Parameters.Add("@LastName", MySqlDbType.VarChar, 255).Value = list[1];
                     cmd2.ExecuteNonQuery();
@@ -48,6 +49,7 @@ namespace Human_Resources__HR_
                 string insertDepartmentQuery = "INSERT INTO Departments (DepartmentName) VALUES (@DepartmentName);";
                 using (MySqlCommand cmd4 = new MySqlCommand(insertDepartmentQuery, conn))
                 {
+                    cmd4.Parameters.Clear();
                     cmd4.Parameters.Add("@DepartmentName", MySqlDbType.VarChar, 255).Value = list[5];
                     cmd4.ExecuteNonQuery();
                 }
@@ -59,6 +61,7 @@ namespace Human_Resources__HR_
                 string insertJobPosition = "INSERT INTO JobPosition (JobName) VALUES (@JobName);";
                 using (MySqlCommand cmd = new MySqlCommand(insertJobPosition, conn))
                 {
+                    cmd.Parameters.Clear();
                     cmd.Parameters.Add("@JobName", MySqlDbType.VarChar, 255).Value = list[4];
                     cmd.ExecuteNonQuery();
                 }
@@ -71,6 +74,7 @@ namespace Human_Resources__HR_
                 string insertEmployeeQuery = "INSERT INTO Employee (GrossWage, NetWage) VALUES (@GrossWage, @NetWage);";
                 using (MySqlCommand cmd = new MySqlCommand(insertEmployeeQuery, conn))
                 {
+                    cmd.Parameters.Clear();
                     cmd.Parameters.Add("@GrossWage", MySqlDbType.VarChar, 255).Value = list[2];
                     cmd.Parameters.Add("@NetWage", MySqlDbType.VarChar, 255).Value=list[3];
                     cmd.ExecuteNonQuery();
@@ -83,6 +87,7 @@ namespace Human_Resources__HR_
                 string insertHistoryQuery = "INSERT INTO History (BeginTime, EndTime) VALUES (@BeginTime, @Endtime);";
                 using (MySqlCommand cmd = new MySqlCommand(insertHistoryQuery, conn))
                 {
+                    cmd.Parameters.Clear();
                     cmd.Parameters.Add("@BeginTime", MySqlDbType.VarChar, 255).Value = list[6];
                     cmd.Parameters.Add("@EndTime", MySqlDbType.VarChar, 255).Value = list[7];
                     cmd.ExecuteNonQuery();

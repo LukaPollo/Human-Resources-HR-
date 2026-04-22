@@ -22,7 +22,7 @@ namespace Human_Resources__HR_
         {
             var employees = new List<Employee>();
 
-            string filePath = "H:\\Visual studio 2022\\Human Resources (HR)\\employees.csv";
+            string filePath = "C:\\Users\\podluk956\\Documents\\Human-Resources-HR-\\employees.csv";
 
             if (!File.Exists(filePath))
                 return employees;
@@ -41,12 +41,12 @@ namespace Human_Resources__HR_
                     {
                         FirstName = splittedrow[0].Trim(),
                         LastName = splittedrow[1].Trim(),
-                        GrossWage = decimal.Parse(splittedrow[2].Trim()),
-                        NetWage = decimal.Parse(splittedrow[3].Trim()),
-                        BeginDate = DateTime.Parse(splittedrow[4].Trim()),
-                        EndDate = DateTime.Parse(splittedrow[5].Trim()),
-                        JobTitle = splittedrow[6].Trim(),
-                        Department = splittedrow[7].Trim()
+                        GrossWage = int.Parse(splittedrow[2].Trim()),
+                        NetWage = int.Parse(splittedrow[3].Trim()),
+                        JobTitle = splittedrow[4].Trim(),
+                        Department = splittedrow[5].Trim(),
+                        BeginDate = DateTime.Parse(splittedrow[6].Trim()),
+                        EndDate = DateTime.Parse(splittedrow[7].Trim())
                     };
 
                     employees.Add(emp);
