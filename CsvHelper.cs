@@ -22,38 +22,36 @@ namespace Human_Resources__HR_
         {
             var employees = new List<Employee>();
 
-            string filePath = "C:\\Users\\podluk956\\Documents\\Human-Resources-HR-\\employees.csv";
-
-            if (!File.Exists(filePath))
-                return employees;
-
-            using (var reader = new StreamReader(filePath))
+            using (var olvasott = new StreamReader(path))
             {
-                string header = reader.ReadLine();
+                olvasott.ReadLine();
 
-                while (!reader.EndOfStream)
+                while (!olvasott.EndOfStream)
                 {
-                    string row = reader.ReadLine();
-                    var splittedrow = row.Split(',');
+                    string row = olvasott.ReadLine();
+                    string[] splittedrow = row.Split(','); 
 
+                    decimal.TryParse(splittedrow[2], out decimal grossWage);
+                    decimal.TryParse(splittedrow[3], out decimal netWage);
+                    DateTime.TryParse(splittedrow[6], out DateTime beginDate);
+                    DateTime.TryParse(splittedrow[7], out DateTime endDate);
 
                     var emp = new Employee
                     {
-                        FirstName = splittedrow[0].Trim(),
-                        LastName = splittedrow[1].Trim(),
-                        GrossWage = int.Parse(splittedrow[2].Trim()),
-                        NetWage = int.Parse(splittedrow[3].Trim()),
-                        JobTitle = splittedrow[4].Trim(),
-                        Department = splittedrow[5].Trim(),
-                        BeginDate = DateTime.Parse(splittedrow[6].Trim()),
-                        EndDate = DateTime.Parse(splittedrow[7].Trim())
+                        FirstName = splittedrow[0],
+                        LastName = splittedrow[1],
+                        GrossWage = grossWage,
+                        NetWage = netWage,
+                        JobTitle = splittedrow[4],
+                        Department = splittedrow[5],
+                        BeginDate = beginDate,
+                        EndDate = endDate
                     };
 
                     employees.Add(emp);
                 }
+                return employees;
             }
-
-            return employees;
         }
     }
 }

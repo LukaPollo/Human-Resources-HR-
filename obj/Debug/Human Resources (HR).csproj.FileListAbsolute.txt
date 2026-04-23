@@ -43,3 +43,42 @@ C:\Users\podluk956\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).
 C:\Users\podluk956\Documents\Human-Resources-HR-\obj\Debug\Human Re.2780967D.Up2Date
 C:\Users\podluk956\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).exe
 C:\Users\podluk956\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).pdb
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Human Resources (HR).exe.config
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Human Resources (HR).exe
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Human Resources (HR).pdb
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Google.Protobuf.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\MySql.Data.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Buffers.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.IO.Pipelines.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Memory.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\ZstdSharp.dll
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Google.Protobuf.pdb
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Google.Protobuf.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\MySql.Data.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Buffers.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.IO.Pipelines.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Memory.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\explo\Documents\Human-Resources-HR-\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).csproj.AssemblyReference.cache
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).exe.config
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).csproj.CoreCompileInputs.cache
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Re.2780967D.Up2Date
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).exe
+C:\Users\explo\Documents\Human-Resources-HR-\obj\Debug\Human Resources (HR).pdb

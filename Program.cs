@@ -13,8 +13,8 @@ namespace Human_Resources__HR_
 
         static void Main(string[] args)
         {
-            string dbPath = "server=localhost;port=3307;database=employee;uid=root";
-            List<Employee> list = CsvHelper.ReadEmployees("C:\\Users\\podluk956\\Documents\\Human-Resources-HR-\\employees.csv");
+            string dbPath = "server=localhost;port=3307;database=humanresources2;uid=root";
+            List<Employee> list = CsvHelper.ReadEmployees("C:\\Users\\explo\\Documents\\Human-Resources-HR-\\employees.csv");
             Database.Database1(dbPath);
         }
     }
