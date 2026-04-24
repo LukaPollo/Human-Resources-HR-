@@ -48,7 +48,7 @@ namespace Human_Resources__HR_
                     cmd.ExecuteNonQuery();
                 }
 
-                string createHistoryTable = "CREATE TABLE IF NOT EXISTS History (Id INT AUTO_INCREMENT PRIMARY KEY, BeginTime DATE, EndTime DATE, CONSTRAINT FK_Employee_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employee(Id))";
+                string createHistoryTable = "CREATE TABLE IF NOT EXISTS History (Id INT AUTO_INCREMENT PRIMARY KEY, BeginTime DATE, EndTime DATE, EmployeeId INT ,CONSTRAINT FK_Employee_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employee(Id))";
                 using (MySqlCommand cmd = new MySqlCommand(createHistoryTable, conn))
                 {
                     cmd.ExecuteNonQuery();
@@ -56,7 +56,7 @@ namespace Human_Resources__HR_
                 string insertDepartment = "INSERT INTO Departments (DepartmentName) VALUES (@DepartmentName)";
                 using (MySqlCommand cmd = new MySqlCommand(insertDepartment, conn))
                 {
-                    var departmentposdist = list.Select(departmentpos => departmentpos.Department).Distinct().OrderBy(departmentpos=> departmentpos);
+                    var departmentposdist = list.Select(departmentpos => departmentpos.Department).Distinct();
                     foreach (var item in departmentposdist)
                     {
                         cmd.Parameters.Clear();
@@ -77,7 +77,7 @@ namespace Human_Resources__HR_
                     }
                 }
 
-                string insertEmployee = "INSERT INTO Employee (FirstName, Lastname, GrossWage, NetWage, JobPositionID ) VALUES (@FirstName, @LastName, @GrossWage, @NetWage, @JobPositionID)";
+                string insertEmployee = "INSERT INTO Employee (FirstName, Lastname, GrossWage, NetWage, JobPositionID, DepartmentsID ) VALUES (@FirstName, @LastName, @GrossWage, @NetWage, @JobPositionID, @DepartmentsID)";
                 using (MySqlCommand cmd = new MySqlCommand(insertEmployee, conn))
                 {
                     string selectQuery = "SELECT Id FROM JobPosition WHERE JobName = @JobTitle";
@@ -104,7 +104,7 @@ namespace Human_Resources__HR_
                         cmd.Parameters.Add("@GrossWage", MySqlDbType.Decimal).Value = list[i].GrossWage;
                         cmd.Parameters.Add("@NetWage", MySqlDbType.Decimal).Value = list[i].NetWage;
                         cmd.Parameters.Add("@JobPositionId", MySqlDbType.Int32).Value = jobtitleid;
-                        cmd.Parameters.Add("DepartmentId", MySqlDbType.Int32).Value = departmentid;
+                        cmd.Parameters.Add("@DepartmentsID", MySqlDbType.Int32).Value = departmentid;
                         
                         
                         cmd.ExecuteNonQuery();
