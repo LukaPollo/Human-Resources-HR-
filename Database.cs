@@ -23,7 +23,7 @@ namespace Human_Resources__HR_
 
         public static void Database1(string connection)
         {
-            List<Employee> list = CsvHelper.ReadEmployees("C:\\Users\\podluk956\\Downloads\\Human-Resources-HR-\\employees.csv");
+            List<Employee> list = CsvHelper.ReadEmployees("C:\\Users\\explo\\Documents\\Human-Resources-HR-\\employees.csv");
             Employee emp = list[0];
 
             using (MySqlConnection conn = new MySqlConnection(connection))
